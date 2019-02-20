@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.template.defaultfilters import truncatechars
 from .models import *
-# from import_export.admin import ImportExportActionModelAdmin
+from import_export.admin import ImportExportActionModelAdmin
 from import_export import resources
 from import_export import fields
 from import_export.widgets import ForeignKeyWidget
@@ -33,20 +33,20 @@ class JobResource(resources.ModelResource):
         # import_id_fields = ['uuid']
 
 
-# class JobAdmin(ImportExportActionModelAdmin):
-#     resource_class = JobResource
-#     # list_display = [field.name for field in Product._meta.fields if field.name != "id"]
-#     list_display = ['id', 'name', 'category',
-#                     'description_S', 'is_active', 'created', 'updated']
-#     inlines = [JobImageInline]
-#     list_filter = ['category']
-#     search_fields = ['name', 'id']
-#
-#     class Meta:
-#         model = Job
-#
-#
-# admin.site.register(Job, JobAdmin)
+class JobAdmin(ImportExportActionModelAdmin):
+    resource_class = JobResource
+    # list_display = [field.name for field in Product._meta.fields if field.name != "id"]
+    list_display = ['id', 'name', 'category',
+                    'description_S', 'is_active', 'created', 'updated']
+    inlines = [JobImageInline]
+    list_filter = ['category']
+    search_fields = ['name', 'id']
+
+    class Meta:
+        model = Job
+
+
+admin.site.register(Job, JobAdmin)
 
 
 class JobImageAdmin(admin.ModelAdmin):
