@@ -1,0 +1,35 @@
+
+{% load static %}
+
+{% block content %}
+{#<div class="accordion block-8">#}
+{#<div class="accordion-item">#}
+{#    <h3 class="mb-0 heading">#}
+{#        <a class="btn-block" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">{{ job_image.Job.category }}<span class="icon"></span></a>#}
+{#    </h3>#}
+{#    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="">#}
+{#        <div class="body-text">#}
+{#            <p><strong>Наименование вакансии:</strong> {{ job_image.Job.name }}</p>#}
+{#            <p><strong>Оплата:</strong> {{ job_image.Job.price }} руб/мес</p>#}
+{#            <p><strong>Дата публикации:</strong> {{ job_image.Job.created }}</p>#}
+{#            <p><strong>Описание вакансии:</strong> {{ job_image.Job.description|truncatechars_html:120 }}</p>#}
+{#            <p id="Job.id" class="mb-0"><a href="{% url 'job' job_image.Job.id %}" class=""><small class="text-uppercase font-weight-bold text-black">Подробнее</small></a></p>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#</div>#}
+
+    <div class="body-text">
+            <p><strong>Наименование вакансии:</strong> {{ job_image.Job.name }}</p>
+            <p><strong>Оплата:</strong> {{ job_image.Job.price }} руб/мес</p>
+            <p><strong>Дата публикации:</strong> {{ job_image.Job.created }}</p>
+            <p><strong>Описание вакансии:</strong> {{ job_image.Job.description|truncatechars_html:120 }}</p>
+            <p id="Job.id" class="mb-0"><a href="{% url 'job' job_image.Job.id %}" class=""><small class="text-uppercase font-weight-bold text-black">Подробнее</small></a></p>
+    <hr>
+    </div>
+
+
+
+
+
+{% endblock content %}

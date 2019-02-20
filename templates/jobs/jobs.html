@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="ftco-section">
+    <div class="container">
+
+        <div class="row">
+            <div class="container"><h2><strong>Предлагаем Вашему вниманию открытые вакансии:</strong></h2></div>
+        </div>
+        <div class="accordion block-8">
+            <div class="accordion-item">
+                <h3 class="mb-0 heading">
+                    <a class="btn-block" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne"><strong>{{ category_1.name }}</strong><span class="icon"></span></a>
+                </h3>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="">
+                        <div class="body-text">
+                            {% for job_image in jobs_images_1 %}
+                                {% include 'landing/job_item.html' %}
+                            {% endfor %}
+                        </div>
+                    </div>
+            </div>
+        </div>
+    <div class="accordion block-8">
+            <div class="accordion-item">
+                <h3 class="mb-0 heading">
+                    <a class="btn-block" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="true" aria-controls="collapse2"><strong>{{ category_2.name }}</strong><span class="icon"></span></a>
+                </h3>
+                    <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="">
+                        <div class="body-text">
+                            {% for job_image in jobs_images_2 %}
+                                {% include 'landing/job_item.html' %}
+                            {% endfor %}
+                        </div>
+                    </div>
+            </div>
+    </div>
+    <div class="accordion block-8">
+            <div class="accordion-item">
+                <h3 class="mb-0 heading">
+                    <a class="btn-block" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="true" aria-controls="collapse3"><strong>{{ category_3.name }}</strong><span class="icon"></span></a>
+                </h3>
+                    <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="">
+                        <div class="body-text">
+                            {% for job_image in jobs_images_3 %}
+                                {% include 'landing/job_item.html' %}
+                            {% endfor %}
+                        </div>
+                    </div>
+            </div>
+    </div>
+    <div class="accordion block-8">
+            <div class="accordion-item">
+                <h3 class="mb-0 heading">
+                    <a class="btn-block" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="true" aria-controls="collapse4"><strong>{{ category_4.name }}</strong><span class="icon"></span></a>
+                </h3>
+                    <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="">
+                        <div class="body-text">
+                            {% for job_image in jobs_images_4 %}
+                                {% include 'landing/job_item.html' %}
+                            {% endfor %}
+                        </div>
+                    </div>
+            </div>
+    </div>
+{#    <div class="accordion block-8">#}
+{#            <div class="accordion-item">#}
+{#                <h3 class="mb-0 heading">#}
+{#                    <a class="btn-block" data-toggle="collapse" href="#collapse5" role="button" aria-expanded="true" aria-controls="collapse5"><strong>{{ category_5.name }}</strong><span class="icon"></span></a>#}
+{#                </h3>#}
+{#                    <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="">#}
+{#                        <div class="body-text">#}
+{#                            {% for job_image in jobs_images_5 %}#}
+{#                                {% include 'landing/job_item.html' %}#}
+{#                            {% endfor %}#}
+{#                        </div>#}
+{#                    </div>#}
+{#            </div>#}
+{#    </div>#}
+{#    <div class="accordion block-8">#}
+{#            <div class="accordion-item">#}
+{#                <h3 class="mb-0 heading">#}
+{#                    <a class="btn-block" data-toggle="collapse" href="#collapse6" role="button" aria-expanded="true" aria-controls="collapse6"><strong>{{ category_6.name }}</strong><span class="icon"></span></a>#}
+{#                </h3>#}
+{#                    <div id="collapse6" class="collapse" aria-labelledby="headingOne" data-parent="">#}
+{#                        <div class="body-text">#}
+{#                            {% for job_image in jobs_images_6 %}#}
+{#                                {% include 'landing/job_item.html' %}#}
+{#                            {% endfor %}#}
+{#                        </div>#}
+{#                    </div>#}
+{#            </div>#}
+{#    </div>#}
+    </div>
+</div>
+
+
+
+{% endblock content %}

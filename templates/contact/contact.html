@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="ftco-cover" style="background-image: url(../../static/images/bg_1.png);" id="section-home" data-aos="fade"  data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row align-items-center ftco-vh-100">
+            <div class="col-md-6">
+                <h1 class="ftco-heading mb-3" data-aos="fade-up" data-aos-delay="500">КАДРОВОЕ АГЕНТСТВО КАСС</h1>
+                <h2 class="h5 ftco-subheading mb-5" data-aos="fade-up"  data-aos-delay="600">Подбор персонала в регионах <a href="https://colorlib.com/" target="_blank">России</a></h2>
+                <p data-aos="fade-up"  data-aos-delay="700"><a href="{% url 'job_seeker' %}" target="_blank" class="btn btn-outline-white px-4 py-3" data-toggle="modal" data-target="#reservationModal">Количество соискателей</a></p>
+                <h2 class="h5 ftco-subheading mb-5" data-aos="fade-up"  data-aos-delay="600">Помощь в трудоустройстве</h2>
+                <p data-aos="fade-up"  data-aos-delay="700"><a href="{% url 'job_seeker' %}" target="_blank" class="btn btn-outline-white px-4 py-3" data-toggle="modal" data-target="#reservationModal">Вакансии</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock content %}

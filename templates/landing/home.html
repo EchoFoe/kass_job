@@ -1,0 +1,283 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="ftco-cover" style="background-image: url(../../static/images/bg_1.png);" id="section-home" data-aos="fade"  data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row align-items-center ftco-vh-100">
+            <div class="col-md-6">
+                <h1 class="ftco-heading mb-3" data-aos="fade-up" data-aos-delay="500">КАДРОВОЕ АГЕНТСТВО КАСС</h1>
+                <h2 class="h5 ftco-subheading mb-5" data-aos="fade-up"  data-aos-delay="600">Подбор персонала в регионах <a href="#" target="_blank">России</a></h2>
+                <p class="" data-aos="fade-up"  data-aos-delay="700"><a href="{% url 'job_seeker' %}" target="_blank" class="btn btn-primary px-4 py-3" data-toggle="" data-target="">СОИСКАТЕЛИ</a></p>
+                <h2 class="h5 ftco-subheading mb-5" data-aos="fade-up"  data-aos-delay="600">Помощь в трудоустройстве</h2>
+                <p class="" data-aos="fade-up"  data-aos-delay="700"><a href="{% url 'jobs' %}" target="_blank" class="btn btn-primary px-4 py-3" data-toggle="" data-target="">ВАКАНСИИ</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section" id="section-about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12  mb-5" data-aos="fade-up">
+                <h2 class="ftco-heading heading-thin mb-5">Компания ООО "КАСС", основанная в 2017 году, является молодым проектом, ставший следствием успешной деятельности в области подбора персонала для строительных площадок Москвы и Московской области. Мы начинали свою деятельность в качестве рекрутеров в регионах России с 2015 года. Уже через 2 года с ростом спроса на наши услуги как со стороны работодателей, так и со стороны соискателей, было принято решение о создании компании, которая будет предоставлять услуги:</h2>
+                <h2>для <strong>работодателей</strong> (подбор нужных специалистов, проведение собеседований, проведение анкетированного опроса по заявке заказчика, организация вахт и т.д.);</h2>
+                <h2>для <strong>соискателей</strong> помощь в трудоустройстве, подбор достойно оплачиваемой работы, предоставление всей необходимой информации по предлагаемой работе, оплате, проживанию и т.д.</h2>
+                <br>
+                <h2 class="ftco-heading heading-thin mb-5">Нашей целью является с одной стороны удовлетворить интересы <strong>работодателей</strong> в потребности квалифицированных специалистов, а с другой, помочь <strong>соискателям</strong> обрести достойно оплачиваемую работу. </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="ftco-section">
+    <div class="container">
+
+        <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center" data-aos="fade-up">
+                <h2>Наши услуги</h2>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                <div class="media block-6">
+                    <div class="icon"><span class="flaticon-bank bg-after"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading"><strong>Ведение рекламной деятельности по регионам России</strong></h3>
+                        <p>Отслеживание и изменение настроек рекламных компаний специалистами с целью улучшения качества трафика и увеличения потока заявок, а также подготовка и предоставление отчетности по рекламе клиенту</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="media block-6">
+                    <div class="icon"><span class="flaticon-career bg-after"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading"><strong>Организация вахт и переездов до места работы</strong></h3>
+                        <p>Предоставим услуги по организации выполнения трудовых функций за пределами Вашего места проживания (периодическая или сезонная работа)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="media block-6">
+                    <div class="icon"><span class="flaticon-lightbulb bg-after"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading"><strong>Разработка условий сотрудничества и предложения</strong></h3>
+                        <p>Наша компания предпринимает активные действия, направленные на создание и укрепление здоровых деловых отношений во взаимодействиях между соискателями и работодателями</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="media block-6">
+                    <div class="icon"><span class="flaticon-pie-chart bg-after"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading"><strong>Ведение массового и срочного подбора</strong></h3>
+                        <p>Мы ведем массовый и сегментированный подбор персонала по специальностям и обязанностям и организуем поток кандидатов</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="media block-6">
+                    <div class="icon"><span class="flaticon-handshake bg-after"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading"><strong>Трудоустройство и консультации</strong></h3>
+                        <p>Одной из целей нашей компании является помощь соискателям</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="media block-6">
+                    <div class="icon"><span class="flaticon-presentation bg-after"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading"><strong>Публикация предложений по работе</strong></h3>
+                        <p>Предложенные специализации всегда соответствуют вакансиям по своему профилю</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="ftco-section">
+    <div class="container">
+
+        <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center" data-aos="fade-up">
+                <h2>Этапы сотрудничества:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-6"  data-aos="fade-up">
+                <div class="container">
+                    <div class="flipper">
+                        <div class="front">
+                            <div class="box">
+                                <h2>РАБОТОДАТЕЛЮ:</h2>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <p class="mb-4">1. Контактная заявка</p>
+                            <p class="mb-4">2. Отвечаем Вам на заявку</p>
+                            <p class="mb-4">3. Обсуждаем условия сотрудничества</p>
+                            <p class="mb-4">4. Заключаем договор</p>
+                            <p class="mb-4">5. Приступаем к исполнению</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6"  data-aos="fade-up" data-aos-delay="200">
+                <div class="container">
+                    <div class="flipper">
+                        <div class="front">
+                            <div class="box">
+                                <h2>СОИСКАТЕЛЮ:</h2>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <p class="mb-4">1. Ознакомьтесь с открытыми вакансиями</p>
+                            <p class="mb-4">2. Заполните и оставьте анкету</p>
+                            <p class="mb-4">3. Подайте заявку на открытую вакансию</p>
+                            <p class="mb-4">4. Мы с Вами связываемся и обсуждаем условия работы</p>
+                            <p class="mb-4">5. Готовим сопроводительные документы</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{#        <div class="row">#}
+{#            <div class="col-md-6 col-lg-6"  data-aos="fade-up">#}
+{#                <div class="flip-container">#}
+{#                    <div class="flipper">#}
+{#                        <div class="front" style="background-image: url(../../static/images/image_5.jpg);">#}
+{#                            <div class="box">#}
+{#                                <h2>РАБОТОДАТЕЛЮ</h2>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="back">#}
+{#                            <p>1. Контактная заявка</p>#}
+{#                            <p>2. Отвечаем Вам на заявку</p>#}
+{#                            <p>3. Обсуждаем условия сотрудничества</p>#}
+{#                            <p>4. Заключаем договор</p>#}
+{#                            <p>5. Приступаем к исполнению</p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#            <div class="col-md-6 col-lg-6"  data-aos="fade-up" data-aos-delay="200">#}
+{#                <div class="flip-container">#}
+{#                    <div class="flipper">#}
+{#                        <div class="front" style="background-image: url(../../static/images/image_7.jpg);">#}
+{#                            <div class="box">#}
+{#                                <h2>СОИСКАТЕЛЮ</h2>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="back">#}
+{#                            <p class="mb-4">1. Ознакомьтесь с открытыми вакансиями</p>#}
+{#                            <p class="mb-4">2. Заполните и оставьте анкету</p>#}
+{#                            <p class="mb-4">3. Подайте заявку на открытую вакансию</p>#}
+{#                            <p class="mb-4">4. Мы с Вами связываемся и обсуждаем условия работы</p>#}
+{#                            <p class="mb-4">5. Готовим сопроводительные документы</p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+    </div>
+</div>
+
+    <section class="ftco-section-2">
+    <div class="container-fluid">
+        <div class="section-2-blocks-wrapper row no-gutters">
+
+            <div class="img col-sm-12 col-md-5" style="background-image: url('../../static/images/image_4.jpg');" data-aos="fade-right">
+                <a href="" data-aos="fade-right" data-aos-delay="700"><span class="ion-ios-play"></span></a>
+            </div>
+
+            <div class="text col-md-6 col-lg-7 d-flex">
+                <div class="text-inner align-self-center" data-aos="fade-up">
+                    <h3><strong>С момента первого звонка до финального заключения договора за счет нашего активного взаимодействия консультанта и клиента на всех этапах выполнения работы, позволяет получать желаемый результат в оптимальные сроки</strong></h3>
+                    <p>Мы занимаемся подбором персонала для наших клиентов более 5 лет. Мы консультируем наших клиентов в области подбора персонала и управления им. Мы делаем это давно и успешно.</p>
+                    <p>Наши ресурсы и опыт позволяют нам решать самые нестандартные задачи.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{#  <div class="ftco-section bg-light">#}
+{#    <div class="container">#}
+{#      <div class="row justify-content-center mb-5 pb-5">#}
+{#        <div class="col-md-7 text-center"  data-aos="fade-up">#}
+{#          <h2>Our Blog</h2>#}
+{#        </div>#}
+{#      </div>#}
+{##}
+{#      <div class="row">#}
+{#        <div class="col-md-6 col-lg-4" data-aos="fade-up">#}
+{#          <a href="blog-single.html" class="block-5" style="background-image: url('../../static/images/image_10.jpg');">#}
+{#            <div class="text">#}
+{#              <div class="subheading">Travel</div>#}
+{#              <h3 class="heading">Far far away, behind the word mountains</h3>#}
+{#              <div class="post-meta">#}
+{#                <span>Wellie Clark</span>#}
+{#                <span>March 20, 2018</span>#}
+{#              </div>#}
+{#            </div>#}
+{#          </a>#}
+{#        </div>#}
+{#        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">#}
+{#          <a href="blog-single.html" class="block-5" style="background-image: url('../../static/images/image_8.jpg');">#}
+{#            <div class="text">#}
+{#              <div class="subheading">Travel</div>#}
+{#              <h3 class="heading">Far far away, behind the word mountains</h3>#}
+{#              <div class="post-meta">#}
+{#                <span>Wellie Clark</span>#}
+{#                <span>March 20, 2018</span>#}
+{#              </div>#}
+{#            </div>#}
+{#          </a>#}
+{#        </div>#}
+{#        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">#}
+{#          <a href="blog-single.html" class="block-5" style="background-image: url('../../static/images/image_9.jpg');">#}
+{#            <div class="text">#}
+{#              <div class="subheading">Travel</div>#}
+{#              <h3 class="heading">Far far away, behind the word mountains</h3>#}
+{#              <div class="post-meta">#}
+{#                <span>Wellie Clark</span>#}
+{#                <span>March 20, 2018</span>#}
+{#              </div>#}
+{#            </div>#}
+{#          </a>#}
+{#        </div>#}
+{#      </div>#}
+{##}
+{#    </div>#}
+{#  </div>#}
+
+
+    
+  
+
+  <!-- loader -->
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+    </svg>
+</div>
+
+{% endblock content %}

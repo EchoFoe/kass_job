@@ -1,0 +1,22 @@
+{% load static %}
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" data-aos="fade-down" data-aos-delay="500">
+      <div class="container">
+          <a class="navbar-brand" href="{% url 'home' %}"> <img src="../static/images/bbbbbb%20(1).png"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Меню
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="{% url 'home' %}" class="nav-link">Домашняя</a></li>
+            <li class="nav-item"><a href="{% url 'job_seeker' %}" class="nav-link">Соискателям</a></li>
+            <li class="nav-item"><a href="{% url 'employer' %}" class="nav-link">Работодателям</a></li>
+            <li class="nav-item"><a href="{% url 'jobs' %}" class="nav-link">Вакансии</a></li>
+            <li class="nav-item"><a href="{% url 'information' %}" class="nav-link">Информация &amp; условия</a></li>
+            <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
