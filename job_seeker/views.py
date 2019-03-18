@@ -37,3 +37,13 @@ def job_seeker(request):
         new_form = form.save()
     return render(request, 'job_seeker/job_seeker.html', locals())
 
+def job_per_seeker(request, job_seeker_id):
+    jobs_per_seeker = Job_seeker.objects.get(id=job_seeker_id)
+
+    session_key = request.session.session_key
+    if not session_key:
+        request.session.cycle_key()
+
+    print(request.session.session_key)
+
+    return render(request, 'landing/job_per_seeker.html', locals())

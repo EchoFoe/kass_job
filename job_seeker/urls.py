@@ -21,19 +21,8 @@ from django.conf import settings
 admin.autodiscover()
 
 urlpatterns = [
-    # url(r'^product-details/$', views.product, name='product-details'),
-    # url(r'^checkout/$', views.checkout, name='checkout'),
-    # url(r'^shop-cart/$', views.cart, name='shop-cart'),
-    # url(r'^magazine/$', views.magazine, name='magazine'),
-    # url(r'^pis/$', views.pis, name='proektirovanie'),
-    # url(r'^bmk/$', views.bmk, name='bmk'),
-    # url(r'^kotli/$', views.kotli, name='kotli'),
-    # url(r'^news/$', views.news, name='news'),
-    # url(r'^epb/$', views.epb, name='epb'),
-    # url(r'^asu/$', views.asu, name='asu'),
-    # url(r'^about_us/$', views.about_us, name='about_us'),
-    # url(r'^kvartiri/$', views.kvartiri, name='kvartiri'),
-    # url(r'^$', views.home, name='home'),
+
+    url(r'^job_per_seeker(?P<job_seeker_id>\w+)/$', views.job_per_seeker, name='job_per_seeker'),
     url(r'^job_seeker/$', views.job_seeker, name='job_seeker'),
 
 ] \

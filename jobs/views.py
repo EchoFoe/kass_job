@@ -3,6 +3,7 @@ from django.shortcuts import render
 from jobs.models import *
 # from utils.uploadings import UploadingProducts
 # from django.contrib import messages
+from django.urls import reverse
 
 def job(request, job_id):
     jobs = Job.objects.get(id=job_id)

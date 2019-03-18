@@ -19,12 +19,12 @@
     <div class="container">
     <div class="row">
         <div class="container"><h2><strong>Информация для соискателей</strong></h2></div>
-        <div class="container"><h2>-Нет времени на поиски работы?</h2></div>
-        <div class="container"><h2>-Постоянно работаете или находитесь в командировках?</h2></div>
-        <div class="container"><h2>-Оставляете резюме на сайтах по подбору работы, а откликов нет?</h2></div>
-        <div class="container"><h2>-У Вас нет возможности вести активный поиск вакансий в интернете</h2></div>
-        <div class="container"><h2>-Или же Вы не желаете, чтобы кто-то знал, что Вы ищите работу?</h2></div>
-        <div class="container"><h2>-Нет времени на поиски работы?</h2></div>
+        <div class="container"><p>-Нет времени на поиски работы?</p></div>
+        <div class="container"><p>-Постоянно работаете или находитесь в командировках?</p></div>
+        <div class="container"><p>-Оставляете резюме на сайтах по подбору работы, а откликов нет?</p></div>
+        <div class="container"><p>-У Вас нет возможности вести активный поиск вакансий в интернете</p></div>
+        <div class="container"><p>-Или же Вы не желаете, чтобы кто-то знал, что Вы ищите работу?</p></div>
+        <div class="container"><p>-Нет времени на поиски работы?</p></div>
         </div>
     </div>
     </div>
@@ -36,6 +36,7 @@
         <br>
       <div class="row block-9">
         <div class="col-md-6 pr-md-5">
+            <p>* Все поля являются <strong>обязательными</strong> для заполнения</p>
           <form action="#" method="post">{% csrf_token %}
             <div class="form-group">
               <input required type="text" class="form-control" name="{{ form.first_name.name }}" value="{{ request.POST.name}}" placeholder="Введите Ваше имя">

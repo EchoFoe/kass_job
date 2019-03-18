@@ -18,10 +18,12 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
     url(r"^admin/", admin.site.urls),
     url(r'^', include('landing.urls')),
     url(r'^', include('jobs.urls')),
+    url(r'^', include('job_seeker.urls')),
     # url(r'^', include('job_seeker.urls')),
     # url(r'^', include('employer.urls')),
 ]\
