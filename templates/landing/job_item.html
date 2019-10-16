@@ -22,7 +22,7 @@
     <div class="body-text">
             <p><strong>Наименование вакансии:</strong> {{ job_image.Job.name }}</p>
             <p><strong>Оплата:</strong> {{ job_image.Job.price }} руб/мес</p>
-            <p><strong>Дата публикации:</strong> {{ job_image.Job.created }}</p>
+            <p><strong>Дата публикации:</strong> {{ job_image.Job.created|date:"F j, Y" }}</p>
             <p><strong>Описание вакансии:</strong> {{ job_image.Job.description|truncatechars_html:120 }}</p>
             <p id="Job.id" class="mb-0"><a href="{% url 'job' job_image.Job.id %}" class=""><small class="text-uppercase font-weight-bold text-black">Подробнее</small></a></p>
     <hr>

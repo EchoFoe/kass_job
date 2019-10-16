@@ -25,7 +25,7 @@
             <h3 class="heading-2 mb-3">{{ jobs.description }}</h3>
 
             <ul class="pricing-text">
-              <li><strong>Дата создания вакансии:</strong> {{ jobs.created }}</li>
+              <li><strong>Дата создания вакансии:</strong> {{ jobs.created|date:"F j, Y" }}</li>
             </ul>
             </div>
           </div>
